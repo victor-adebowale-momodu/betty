@@ -1,16 +1,28 @@
 [project]
 name = "betty"
 version = "0.1.0"
-description = "Add your description here"
+description = "Research project: can Bet365 La Liga 1X2 closing odds alone support a profitable betting strategy?"
 readme = "README.md"
 authors = [
     { name = "Victor Momodu", email = "victoramomodu@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "pandas",
+    "numpy",
+    "scipy",
+    "plotly",
+    "streamlit",
+    "jupyter",
+    "pyarrow",
+]
 
 [project.scripts]
-betty = "betty:main"
+betty = "src.main:main"
+
+[tool.uv.build-backend]
+module-name = "src"
+module-root = ""
 
 [build-system]
 requires = ["uv_build>=0.12.6,<0.13.0"]

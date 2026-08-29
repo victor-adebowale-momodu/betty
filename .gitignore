@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+*.log
+.streamlit/secrets.toml
+
+# Generated / local files
+data/processed/
+*.parquet
+.pytest_cache/
+*.egg-info/
+dist/
+build/
